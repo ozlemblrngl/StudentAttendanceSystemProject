@@ -7,7 +7,7 @@ Public Class StudentAttendance
         Dim rollNo As String = TxtRollNo.Text
         Dim status As String = TxtStatus.Text
 
-        Dim query As String = ("insert into newtab values (@studentID,@name,@rollNo,@status)")
+        Dim query As String = ("insert into newtab values (@id,@name,@rollNo,@status)")
         Using con As SqlConnection = New SqlConnection("Data Source= DESKTOP-N9UK4PN;Initial Catalog=StudentAttendanceDB;Integrated Security=True;TrustServerCertificate=True")
             Using cnn As SqlCommand = New SqlCommand(query, con)
                 cnn.Parameters.AddWithValue("@Id", id)
