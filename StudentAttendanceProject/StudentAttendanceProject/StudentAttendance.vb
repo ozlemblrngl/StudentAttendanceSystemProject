@@ -85,7 +85,7 @@ Public Class StudentAttendance
         Dim Id As Integer = TxtStudentId.Text
         Dim query As String = "delete newtab where id=@id"
 
-        Using con As SqlConnection = New SqlConnection("Data Source=DESKTOP-N9UK4PN;Initial Catalog=StudentAttendanceDB;Integrated Security=True;Trust Server Certificate=True ")
+        Using con As SqlConnection = New SqlConnection("Data Source=DESKTOP-N9UK4PN;Initial Catalog=StudentAttendanceDB;Integrated Security=True;TrustServerCertificate=True ")
             con.Open()
 
             Using cnn As SqlCommand = New SqlCommand(query, con)
