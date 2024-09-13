@@ -27,4 +27,20 @@ Public Class StudentAttendance
 
 
     End Sub
+
+    Private Sub BtnInsert_Click(sender As Object, e As EventArgs) Handles BtnInsert.Click
+
+        Dim query As String = ("select * from newtab")
+        Using con As SqlConnection = New SqlConnection("Data Source=Data Source=DESKTOP-N9UK4PN;Initial Catalog=StudentAttendanceDB;Integrated Security=True;Trust Server Certificate=True ")
+            Using cnn As SqlCommand = New SqlCommand(query, con)
+                Using da As New SqlDataAdapter(cnn)
+                    Using table As New DataTable()
+                        da.Fill(table)
+                        DataGridView1.DataSource = table
+                    End Using
+                End Using
+            End Using
+
+        End Using
+    End Sub
 End Class
