@@ -8,7 +8,7 @@ Public Class StudentAttendance
         Dim status As String = TxtStatus.Text
 
         Dim query As String = ("insert into newtab values (@studentID,@name,@rollNo,@status)")
-        Using con As SqlConnection = New SqlConnection("Data Source= Data Source=DESKTOP-N9UK4PN;Initial Catalog=StudentAttendanceDB;Integrated Security=True;Trust Server Certificate=True")
+        Using con As SqlConnection = New SqlConnection("Data Source= DESKTOP-N9UK4PN;Initial Catalog=StudentAttendanceDB;Integrated Security=True;Trust Server Certificate=True")
             Using cnn As SqlCommand = New SqlCommand(query, con)
                 cnn.Parameters.AddWithValue("@Id", id)
                 cnn.Parameters.AddWithValue("@Name", name)
@@ -31,7 +31,7 @@ Public Class StudentAttendance
     Private Sub BtnInsert_Click(sender As Object, e As EventArgs) Handles BtnInsert.Click
 
         Dim query As String = ("select * from newtab")
-        Using con As SqlConnection = New SqlConnection("Data Source=Data Source=DESKTOP-N9UK4PN;Initial Catalog=StudentAttendanceDB;Integrated Security=True;Trust Server Certificate=True ")
+        Using con As SqlConnection = New SqlConnection("Data Source=DESKTOP-N9UK4PN;Initial Catalog=StudentAttendanceDB;Integrated Security=True;Trust Server Certificate=True ")
             Using cnn As SqlCommand = New SqlCommand(query, con)
                 Using da As New SqlDataAdapter(cnn)
                     Using table As New DataTable()
@@ -50,7 +50,7 @@ Public Class StudentAttendance
         Dim status As String = TxtStatus.Text
 
         Dim query As String = ("update newtab set name=@name,rollNo= @rollNo,status=@status where id = @id")
-        Using con As SqlConnection = New SqlConnection("Data Source=Data Source=DESKTOP-N9UK4PN;Initial Catalog=StudentAttendanceDB;Integrated Security=True;Trust Server Certificate=True ")
+        Using con As SqlConnection = New SqlConnection("Data Source=DESKTOP-N9UK4PN;Initial Catalog=StudentAttendanceDB;Integrated Security=True;Trust Server Certificate=True ")
             con.Open()
 
             Using cnn As SqlCommand = New SqlCommand(query, con)
@@ -69,7 +69,7 @@ Public Class StudentAttendance
 
     Private Sub StudentAttendance_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim query As String = ("select * from newtab")
-        Using con As SqlConnection = New SqlConnection("Data Source=Data Source=DESKTOP-N9UK4PN;Initial Catalog=StudentAttendanceDB;Integrated Security=True;Trust Server Certificate=True ")
+        Using con As SqlConnection = New SqlConnection("Data Source=DESKTOP-N9UK4PN;Initial Catalog=StudentAttendanceDB;Integrated Security=True;Trust Server Certificate=True ")
             Using cnn As SqlCommand = New SqlCommand(query, con)
                 Using da As New SqlDataAdapter(cnn)
                     Using table As New DataTable()
@@ -85,7 +85,7 @@ Public Class StudentAttendance
         Dim Id As Integer = TxtStudentId.Text
         Dim query As String = "delete newtab where id=@id"
 
-        Using con As SqlConnection = New SqlConnection("Data Source=Data Source=DESKTOP-N9UK4PN;Initial Catalog=StudentAttendanceDB;Integrated Security=True;Trust Server Certificate=True ")
+        Using con As SqlConnection = New SqlConnection("Data Source=DESKTOP-N9UK4PN;Initial Catalog=StudentAttendanceDB;Integrated Security=True;Trust Server Certificate=True ")
             con.Open()
 
             Using cnn As SqlCommand = New SqlCommand(query, con)
