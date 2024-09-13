@@ -8,7 +8,7 @@ This project is a **Student Attendance Management System** built using **Visual 
 - **Delete Records**: Remove outdated or incorrect entries.
 - **View Attendance**: Display all records in a grid view for easy reference.
 
-## Technologies Used
+## Technologies 
 - **Visual Basic .NET** (Windows Forms)
 - **SQL Server** for database management
 - **.NET Framework**
