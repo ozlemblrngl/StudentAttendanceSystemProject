@@ -29,10 +29,10 @@ Partial Class StudentAttendance
         Me.BtnUpdate = New System.Windows.Forms.Button()
         Me.BtnInsert = New System.Windows.Forms.Button()
         Me.BtnSave = New System.Windows.Forms.Button()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TxtStatus = New System.Windows.Forms.TextBox()
+        Me.TxtRollNo = New System.Windows.Forms.TextBox()
+        Me.TxtStudentName = New System.Windows.Forms.TextBox()
+        Me.TxtStudentId = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -71,10 +71,10 @@ Partial Class StudentAttendance
         Me.Panel2.Controls.Add(Me.BtnUpdate)
         Me.Panel2.Controls.Add(Me.BtnInsert)
         Me.Panel2.Controls.Add(Me.BtnSave)
-        Me.Panel2.Controls.Add(Me.TextBox4)
-        Me.Panel2.Controls.Add(Me.TextBox3)
-        Me.Panel2.Controls.Add(Me.TextBox2)
-        Me.Panel2.Controls.Add(Me.TextBox1)
+        Me.Panel2.Controls.Add(Me.TxtStatus)
+        Me.Panel2.Controls.Add(Me.TxtRollNo)
+        Me.Panel2.Controls.Add(Me.TxtStudentName)
+        Me.Panel2.Controls.Add(Me.TxtStudentId)
         Me.Panel2.Controls.Add(Me.Label5)
         Me.Panel2.Controls.Add(Me.Label4)
         Me.Panel2.Controls.Add(Me.Label3)
@@ -132,33 +132,33 @@ Partial Class StudentAttendance
         Me.BtnSave.Text = "Save"
         Me.BtnSave.UseVisualStyleBackColor = False
         '
-        'TextBox4
+        'TxtStatus
         '
-        Me.TextBox4.Location = New System.Drawing.Point(224, 172)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(235, 20)
-        Me.TextBox4.TabIndex = 7
+        Me.TxtStatus.Location = New System.Drawing.Point(224, 172)
+        Me.TxtStatus.Name = "TxtStatus"
+        Me.TxtStatus.Size = New System.Drawing.Size(235, 20)
+        Me.TxtStatus.TabIndex = 7
         '
-        'TextBox3
+        'TxtRollNo
         '
-        Me.TextBox3.Location = New System.Drawing.Point(224, 120)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(235, 20)
-        Me.TextBox3.TabIndex = 6
+        Me.TxtRollNo.Location = New System.Drawing.Point(224, 120)
+        Me.TxtRollNo.Name = "TxtRollNo"
+        Me.TxtRollNo.Size = New System.Drawing.Size(235, 20)
+        Me.TxtRollNo.TabIndex = 6
         '
-        'TextBox2
+        'TxtStudentName
         '
-        Me.TextBox2.Location = New System.Drawing.Point(224, 69)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(235, 20)
-        Me.TextBox2.TabIndex = 5
+        Me.TxtStudentName.Location = New System.Drawing.Point(224, 69)
+        Me.TxtStudentName.Name = "TxtStudentName"
+        Me.TxtStudentName.Size = New System.Drawing.Size(235, 20)
+        Me.TxtStudentName.TabIndex = 5
         '
-        'TextBox1
+        'TxtStudentId
         '
-        Me.TextBox1.Location = New System.Drawing.Point(224, 21)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(235, 20)
-        Me.TextBox1.TabIndex = 4
+        Me.TxtStudentId.Location = New System.Drawing.Point(224, 21)
+        Me.TxtStudentId.Name = "TxtStudentId"
+        Me.TxtStudentId.Size = New System.Drawing.Size(235, 20)
+        Me.TxtStudentId.TabIndex = 4
         '
         'Label5
         '
@@ -238,10 +238,10 @@ Partial Class StudentAttendance
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents BtnSave As Button
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TxtStatus As TextBox
+    Friend WithEvents TxtRollNo As TextBox
+    Friend WithEvents TxtStudentName As TextBox
+    Friend WithEvents TxtStudentId As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents BtnDelete As Button
     Friend WithEvents BtnUpdate As Button
