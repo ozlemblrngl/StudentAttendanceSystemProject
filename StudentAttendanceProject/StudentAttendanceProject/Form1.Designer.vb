@@ -25,20 +25,22 @@ Partial Class StudentAttendance
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.BtnDelete = New System.Windows.Forms.Button()
+        Me.BtnUpdate = New System.Windows.Forms.Button()
+        Me.BtnInsert = New System.Windows.Forms.Button()
+        Me.BtnSave = New System.Windows.Forms.Button()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.BtnSave = New System.Windows.Forms.Button()
-        Me.BtnInsert = New System.Windows.Forms.Button()
-        Me.BtnUpdate = New System.Windows.Forms.Button()
-        Me.BtnDelete = New System.Windows.Forms.Button()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -48,7 +50,7 @@ Partial Class StudentAttendance
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(816, 76)
+        Me.Panel1.Size = New System.Drawing.Size(813, 76)
         Me.Panel1.TabIndex = 0
         '
         'Label1
@@ -82,6 +84,92 @@ Partial Class StudentAttendance
         Me.Panel2.Size = New System.Drawing.Size(786, 304)
         Me.Panel2.TabIndex = 1
         '
+        'BtnDelete
+        '
+        Me.BtnDelete.BackColor = System.Drawing.Color.Orange
+        Me.BtnDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnDelete.ForeColor = System.Drawing.SystemColors.Desktop
+        Me.BtnDelete.Location = New System.Drawing.Point(452, 218)
+        Me.BtnDelete.Name = "BtnDelete"
+        Me.BtnDelete.Size = New System.Drawing.Size(132, 49)
+        Me.BtnDelete.TabIndex = 11
+        Me.BtnDelete.Text = "Delete"
+        Me.BtnDelete.UseVisualStyleBackColor = False
+        '
+        'BtnUpdate
+        '
+        Me.BtnUpdate.BackColor = System.Drawing.Color.Orange
+        Me.BtnUpdate.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnUpdate.ForeColor = System.Drawing.SystemColors.Desktop
+        Me.BtnUpdate.Location = New System.Drawing.Point(314, 218)
+        Me.BtnUpdate.Name = "BtnUpdate"
+        Me.BtnUpdate.Size = New System.Drawing.Size(132, 49)
+        Me.BtnUpdate.TabIndex = 10
+        Me.BtnUpdate.Text = "Update"
+        Me.BtnUpdate.UseVisualStyleBackColor = False
+        '
+        'BtnInsert
+        '
+        Me.BtnInsert.BackColor = System.Drawing.Color.Orange
+        Me.BtnInsert.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnInsert.ForeColor = System.Drawing.SystemColors.Desktop
+        Me.BtnInsert.Location = New System.Drawing.Point(176, 218)
+        Me.BtnInsert.Name = "BtnInsert"
+        Me.BtnInsert.Size = New System.Drawing.Size(132, 49)
+        Me.BtnInsert.TabIndex = 9
+        Me.BtnInsert.Text = "Insert"
+        Me.BtnInsert.UseVisualStyleBackColor = False
+        '
+        'BtnSave
+        '
+        Me.BtnSave.BackColor = System.Drawing.Color.Orange
+        Me.BtnSave.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnSave.ForeColor = System.Drawing.SystemColors.Desktop
+        Me.BtnSave.Location = New System.Drawing.Point(38, 218)
+        Me.BtnSave.Name = "BtnSave"
+        Me.BtnSave.Size = New System.Drawing.Size(132, 49)
+        Me.BtnSave.TabIndex = 8
+        Me.BtnSave.Text = "Save"
+        Me.BtnSave.UseVisualStyleBackColor = False
+        '
+        'TextBox4
+        '
+        Me.TextBox4.Location = New System.Drawing.Point(224, 172)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(235, 20)
+        Me.TextBox4.TabIndex = 7
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(224, 120)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(235, 20)
+        Me.TextBox3.TabIndex = 6
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(224, 69)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(235, 20)
+        Me.TextBox2.TabIndex = 5
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(224, 21)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(235, 20)
+        Me.TextBox1.TabIndex = 4
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(35, 171)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(50, 18)
+        Me.Label5.TabIndex = 3
+        Me.Label5.Text = "Status"
+        '
         'Label4
         '
         Me.Label4.AutoSize = True
@@ -112,106 +200,33 @@ Partial Class StudentAttendance
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Student ID"
         '
-        'Label5
+        'DataGridView1
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(35, 171)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(50, 18)
-        Me.Label5.TabIndex = 3
-        Me.Label5.Text = "Status"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(224, 21)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(235, 20)
-        Me.TextBox1.TabIndex = 4
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(224, 69)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(235, 20)
-        Me.TextBox2.TabIndex = 5
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(224, 120)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(235, 20)
-        Me.TextBox3.TabIndex = 6
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(224, 172)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(235, 20)
-        Me.TextBox4.TabIndex = 7
-        '
-        'BtnSave
-        '
-        Me.BtnSave.BackColor = System.Drawing.Color.Orange
-        Me.BtnSave.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnSave.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.BtnSave.Location = New System.Drawing.Point(38, 218)
-        Me.BtnSave.Name = "BtnSave"
-        Me.BtnSave.Size = New System.Drawing.Size(132, 49)
-        Me.BtnSave.TabIndex = 8
-        Me.BtnSave.Text = "Save"
-        Me.BtnSave.UseVisualStyleBackColor = False
-        '
-        'BtnInsert
-        '
-        Me.BtnInsert.BackColor = System.Drawing.Color.Orange
-        Me.BtnInsert.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnInsert.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.BtnInsert.Location = New System.Drawing.Point(176, 218)
-        Me.BtnInsert.Name = "BtnInsert"
-        Me.BtnInsert.Size = New System.Drawing.Size(132, 49)
-        Me.BtnInsert.TabIndex = 9
-        Me.BtnInsert.Text = "Insert"
-        Me.BtnInsert.UseVisualStyleBackColor = False
-        '
-        'BtnUpdate
-        '
-        Me.BtnUpdate.BackColor = System.Drawing.Color.Orange
-        Me.BtnUpdate.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnUpdate.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.BtnUpdate.Location = New System.Drawing.Point(314, 218)
-        Me.BtnUpdate.Name = "BtnUpdate"
-        Me.BtnUpdate.Size = New System.Drawing.Size(132, 49)
-        Me.BtnUpdate.TabIndex = 10
-        Me.BtnUpdate.Text = "Update"
-        Me.BtnUpdate.UseVisualStyleBackColor = False
-        '
-        'BtnDelete
-        '
-        Me.BtnDelete.BackColor = System.Drawing.Color.Orange
-        Me.BtnDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnDelete.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.BtnDelete.Location = New System.Drawing.Point(452, 218)
-        Me.BtnDelete.Name = "BtnDelete"
-        Me.BtnDelete.Size = New System.Drawing.Size(132, 49)
-        Me.BtnDelete.TabIndex = 11
-        Me.BtnDelete.Text = "Delete"
-        Me.BtnDelete.UseVisualStyleBackColor = False
+        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(11, 402)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.ReadOnly = True
+        Me.DataGridView1.Size = New System.Drawing.Size(785, 214)
+        Me.DataGridView1.TabIndex = 2
         '
         'StudentAttendance
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.PaleTurquoise
-        Me.ClientSize = New System.Drawing.Size(816, 450)
+        Me.ClientSize = New System.Drawing.Size(813, 630)
+        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "StudentAttendance"
-        Me.Text = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "StudentAttendance"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -231,4 +246,5 @@ Partial Class StudentAttendance
     Friend WithEvents BtnDelete As Button
     Friend WithEvents BtnUpdate As Button
     Friend WithEvents BtnInsert As Button
+    Friend WithEvents DataGridView1 As DataGridView
 End Class
